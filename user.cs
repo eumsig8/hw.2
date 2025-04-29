@@ -8,7 +8,7 @@ namespace hw2
 {
     class user
     {
-        public int Id { get; set; }
+        public int Ide { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
