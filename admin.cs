@@ -8,7 +8,7 @@ namespace hw2
 {
     class admin: user
     {
-        public int Agu { get; set; }
+        public int Age { get; set; }
         public int Balance { get; set; }
 
     }
