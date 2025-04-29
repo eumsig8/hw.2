@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace hw2
 {
-    class user
+    class User
     {
         public int Id { get; set; }
         public string Name { get; set; }

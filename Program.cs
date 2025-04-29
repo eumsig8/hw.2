@@ -6,12 +6,12 @@ namespace hw2
     {
         static void Main(string[] args)
         {
-            var streamJson = File.ReadAllText("user1.json");
-            user? jsonDes = JsonSerializer.Deserialize<user>(streamJson);
-            Console.WriteLine("Parsed user = {0}, {1}, {2}, {3}", jsonDes.Id, jsonDes.Password, jsonDes.Email, jsonDes.Name);
-            streamJson = File.ReadAllText("admin1.json");
-            admin? admin1 = JsonSerializer.Deserialize<admin>(streamJson);
-            Console.WriteLine("The admin is = {0}, {1}, {2}, {3}, {4}, {5}", admin1.Name, admin1.Password, admin1.Age, admin1.Email, admin1.Balance, admin1.Id);
+            var streamJson = File.ReadAllText("User.json");
+            User? jsonDes = JsonSerializer.Deserialize<User>(streamJson);
+            Console.WriteLine("Parsed user = {0}, {1}, {2}, {}", jsonDes.Id, jsonDes.Password, jsonDes.Email, jsonDes.Name);
+            streamJson = File.ReadAllText("Admin.json");
+            Admin? admin = JsonSerializer.Deserialize<Admin>(streamJson);
+            Console.WriteLine("The admin is = {0}, {1}, {2}, {3}, {4}", admin.Name, admin.Password, admin.Age, admin.Email, admin.Balance);
         }
     }
 }

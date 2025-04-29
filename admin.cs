@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace hw2
 {
-    class admin: user
+    class Admin: User
     {
         public int Age { get; set; }
         public int Balance { get; set; }
